@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- ===================================================== -->
+<!-- 🧠 HEAD START — COPY -->
+<!-- ===================================================== -->
+
+<meta charset="UTF-8">
+<title>2 Sounds Blending Game: Sea Blast</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- ===================================================== -->
+<!-- 🧠 HEAD END -->
+<!-- ===================================================== -->
+
+</head>
+
+<body>
+
+
+<!-- ===================================================== -->
+<!-- 🟩 HEADER START — COPY -->
+<!-- ===================================================== -->
+
+<header>
+
+  <h1>2 Sounds Blending Game: Sea Blast</h1>
+
+  <div class="button-row">
+
+    <button id="shuffleBtn">Shuffle</button>
+    <button id="prevBtn">← Previous</button>
+    <button id="nextBtn">Next →</button>
+    <button id="menuBtn">Back to Main Menu</button>
+
+    <select id="animalSelector">
+      <option value="🐳">🐳 Whale</option>
+      <option value="🦞">🦞 Lobster</option>
+      <option value="🪼">🪼 Jellyfish</option>
+      <option value="🐠">🐠 Tropical Fish</option>
+      <option value="🐙">🐙 Octopus</option>
+    </select>
+  </div>
+
+</header>
+
+<!-- ===================================================== -->
+<!-- 🟩 HEADER END -->
+<!-- ===================================================== -->
+
+
+
+<!-- ===================================================== -->
+<!-- 🟦 MAIN LAYOUT START — COPY -->
+<!-- ===================================================== -->
+
+<div id="game-container">
+
+
+  <!-- ===================================================== -->
+  <!-- ⭐ PHONICS ENGINE START — COPY -->
+  <!-- ===================================================== -->
+
+  <div id="left-panel">
+
+    <!-- ===================================================== -->
+    <!-- 🖼 PHONICS IMAGE -->
+    <!-- ===================================================== -->
+
+    <img id="image" src="zimages/zplaceholder.png" alt="word image">
+
+
+    <!-- ===================================================== -->
+    <!-- 🔤 PHONICS ROW 1 (STEP 1) -->
+    <!-- ===================================================== -->
+
+    <div class="letters-row spaced" id="row1"></div>
+
+
+    <!-- ===================================================== -->
+    <!-- 🔤 PHONICS ROW 2 (STEP 2) -->
+    <!-- ===================================================== -->
+
+    <div class="letters-row spaced" id="row2"></div>
+
+  </div>
+
+  <!-- ===================================================== -->
+  <!-- ⭐ PHONICS ENGINE END -->
+  <!-- ===================================================== -->
+
+
+
+<!-- ===================================================== -->
+<!-- 🎮 GAME ENGINE START — HIDE & SEEK -->
+<!-- ===================================================== -->
+
+<div id="right-panel">
+
+  <!-- 📝 INSTRUCTION -->
+  <div id="instructionText"></div>
+
+  <!-- 🧮 SCOREBOARD -->
+  <div class="scoreboard">
+
+    <!-- 🐶 DOG TEAM -->
+    <div id="dogTeam" class="team dog active">
+      <span class="team-emoji">🐶</span>
+      <div id="dogPoints" class="goal"></div>
+    </div>
+
+    <!-- 🕸️ CATCH BUTTON -->
+    <button id="catchBtn">
+      <span class="web">🕸️</span>
+      <span>CATCH!</span>
+    </button>
+    
+    <!-- 🐯 TIGER TEAM -->
+    <div id="tigerTeam" class="team tiger">
+      <span class="team-emoji">🐯</span>
+      <div id="tigerPoints" class="goal"></div>
+    </div>
+
+  </div>
+
+  <!-- 🌲 GAME AREA -->
+  <div id="game-area">
+
+    <!-- 🟩 TILE GRID (BACKGROUND) -->
+    <div id="forestGrid"></div>
+
+    <!-- 🐾 FLOATING ANIMAL LAYER (NEW) -->
+    <div id="animalLayer"></div>
+  </div>
+  
+</div>
+
+
+<!-- ===================================================== -->
+<!-- 🎮 GAME ENGINE END -->
+<!-- ===================================================== -->
+
+
+</div>
+
+<!-- ===================================================== -->
+<!-- 🟦 MAIN LAYOUT END -->
+<!-- ===================================================== -->
+
+<!-- ===================================================== -->
+<!-- 📜 SCRIPT START — COPY -->
+<!-- ===================================================== -->
+
+<script src="game.js"></script>
+
+<!-- ===================================================== -->
+<!-- 📜 SCRIPT END -->
+<!-- ===================================================== -->
+
+
+</body>
+</html>
