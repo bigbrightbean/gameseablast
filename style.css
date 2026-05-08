@@ -467,7 +467,7 @@ margin:20px auto;
 
 .tile{
   position:relative;
-  aspect-ratio:1 / 1;
+  height:150px;
   border-radius:12px;
   overflow:hidden;
 
